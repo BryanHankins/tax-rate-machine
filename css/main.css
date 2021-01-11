@@ -1,0 +1,55 @@
+:root {
+  /* colors */
+  --lavander: #967bb6;
+  --max-width: 1280px;
+  --fixed-width: 620px;
+  --black: #222;
+  --white: #fff;
+  --ff-secondary: "Roboto", sans-serif;
+  --ff-primary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: var(--max-width);
+  max-height: auto;
+  text-decoration: none; }
+
+#StateTaxs {
+  text-align: center;
+  align-items: center;
+  display: block;
+  padding: -10px; }
+
+#input1 {
+  border: 1px solid black; }
+
+.input2 {
+  text-align: center;
+  padding: 0%; }
+
+#input1,
+#income,
+#answer {
+  display: flex;
+  align-items: center;
+  text-align-last: center;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-top: 15px; }
+
+#income {
+  font-size: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  color: blue;
+  text-align: none; }
+
+#answer {
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  background-color: rosybrown;
+  border: none; }
