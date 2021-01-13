@@ -1,26 +1,28 @@
 
-  
-  var input1 = "", // STATE BUTTON
+
+  "use strict";
+
+  var input1 = ".input1", // STATE BUTTON
    input2 = "", // SECOND INPUT PUT SALLARARY
     viewer = "#viewer", // displays your bal after taxs
-  
-  
    calculate = ("#caluclate"); /// suppose to calculate input
 
 
     input1 = parseFloat(input1);
     input2 = parseFloat(input2);
 
-  console.log(".input1")
-     
     
+
+  console.log(".input1");
+     
+  
   var setNum = function() {
     if (resultNum) {
-      input1 = this.getAttribute("data-ops")
+      input1 = this.getAttribute("data-ops");
       resultNum = ""
   } else {
-    theNum += this.getAttribute("data-ops")
-    viewer.innerHTML = input1
+    theNum += this.getAttribute("data-ops");
+    viewer.innerHTML = input1;
   };
   var moveNum = function() {
     oldNum = theNum;
@@ -29,12 +31,12 @@
       calculate.setAttribute("data-result", "");
   } 
 }
-    viewer.innerHTML = calculate;
+    viewer.innerHTML = "#caluclate";
     calculate.onclick = viewer;
 
   console.log(viewer);
 
-    switch (input1) {
+    switch (operator) {
       case "Alabama":
         input1 = 4
           break;
@@ -190,16 +192,16 @@
           break;
 
           default:
-            input1 = 0
-    }
-
-    viewer.onclick  = function(){
-       viewer.innterHTML = input1 * input2;
+            input1 = 2
     };
-    
-    viewer.innerHTML = "input1" * "input2";
+    console.log("Wyoming")
+    viewer.onclick  = function(){
+       viewer.innerHTML = input1 * input2;
+    };
+    input1.onclick = function () {
+      console.log(".input");
+    }
     
     caluclate.setAttribute("data-result", input1);
     
-
- 
+  
